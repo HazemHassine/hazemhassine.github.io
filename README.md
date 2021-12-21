@@ -2,4 +2,4 @@
 ---
 ## Allows you to save colors
 ## You can copy colors easily in hex format
-Acess through [this link](hazemhassine.github.io)
+Access through [this link](https://hazemhassine.github.io/)
