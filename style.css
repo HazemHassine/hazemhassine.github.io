@@ -70,6 +70,16 @@ h3 {
   color: var(--main-bg-color);
   border: none;
 }
+#save {
+  margin-top: 45px;
+  font-size: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  color: var(--main-bg-color);
+  border: none;
+}
 p {
   font-size: 30px;
   position: absolute;
@@ -77,4 +87,19 @@ p {
 }
 #hex2 {
   color: var(--gradient-two);
+}
+.saved-color {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+}
+#saved {
+  display: flex;
+  align-self: center;
+  transform: translateY(31vh);
+  width:48vw;
+  margin-left: 25vw; 
+  flex-direction: row;
+  gap: 25px;
+  padding: 0 25px;
 }
