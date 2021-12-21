@@ -10,6 +10,8 @@
 }
 body {
   background: linear-gradient(var(--main-bg-color),var(--gradient-two));
+  height: 100%;
+  background-attachment: fixed;
 }
 .conatiner {
   height: 100vh;
@@ -74,4 +76,7 @@ p {
   font-size: 30px;
   position: absolute;
   bottom: 0;
+}
+#hex2 {
+  color: var(--gradient-two);
 }
