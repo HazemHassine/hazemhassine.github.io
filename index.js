@@ -8,6 +8,7 @@ const spanHex1 = document.getElementById("hex1");
 const spanHex2 = document.getElementById("hex2");
 let current = "color";
 // event listeners
+color.style.textDecoration = "underline";
 hexColor.addEventListener("click", function (e) {
   navigator.clipboard.writeText(hexColor.innerText);
 });

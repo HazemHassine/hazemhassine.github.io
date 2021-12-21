@@ -34,9 +34,7 @@ h2 {
   font-size: 30px;
   font-weight: 1200;
 }
-.active {
-  text-decoration: underline;
-}
+
 #title-color {
   color: var(--main-bg-color);
 }
