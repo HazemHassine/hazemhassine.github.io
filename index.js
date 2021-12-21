@@ -12,6 +12,7 @@ let current = "color";
 color.style.textDecoration = "underline";
 hexColor.addEventListener("click", function (e) {
   navigator.clipboard.writeText(hexColor.innerText);
+  hexColor.style.textDecoration ="underline";
 });
 color.addEventListener("click", function (e) {
   color.style.textDecoration = "underline";
@@ -68,6 +69,7 @@ function generate() {
     spanHex2.innerText = hex2;
   }
   savable = true;
+  hexColor.style.textDecoration ="none";
 }
 function save() {
   if (saved.childElementCount > 12) {
@@ -88,21 +90,22 @@ function save() {
       colorDiv.classList.add(currentColor2.slice(1));
     }
     colorDiv.addEventListener("click", function (e) {
-      const Classes= e.target.classList;
-      let toCopy ="";
+      const Classes = e.target.classList;
+      let toCopy = "";
       if (Classes.length == 3) {
-        toCopy+= Classes[1] + "_" + Classes[2];
-      }
-      else if (Classes.length == 2) {
+        toCopy += Classes[1] + "_" + Classes[2];
+      } else if (Classes.length == 2) {
         toCopy = Classes[1];
       }
-      navigator.clipboard.writeText('#' + toCopy.replace("_", " #"));      
+      navigator.clipboard.writeText("#" + toCopy.replace("_", " #"));
+    });
+    colorDiv.addEventListener("dblclick", function (e) {
+      colorDiv.classList.add("deleted");
+      colorDiv.ontransitionend = () => {
+        colorDiv.remove();
+      };
     });
     saved.appendChild(colorDiv);
   }
   savable = false;
-}
-function componentToHex(c) {
-  var hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
 }
