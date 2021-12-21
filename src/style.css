@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root {
+  --main-bg-color: #a68dad;
+  --gradient-two: #a68dad;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(var(--main-bg-color),var(--gradient-two));
+}
+.conatiner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-banner {
+  background-color: white;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h2 {
+  color: black;
+  margin: 3rem;
+  font-size: 30px;
+  font-weight: 1200;
+}
+.active {
+  text-decoration: underline;
+}
+#title-color {
+  color: var(--main-bg-color);
+}
+
+.inside-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  transform: translateY(30vh);
+  min-height: 35vh;
+  background: rgba(255, 240, 240, 0.8);
+  width: 50vw;
+  margin-left: 25vw;
+  border-radius: 25px;
+}
+h1 {
+  margin-top: 40px;
+  color: var(--main-bg-color);
+}
+h3 {
+  font-size: 60px;
+  margin-top: 45px;
+  color: var(--main-bg-color);
+}
+#generate {
+  margin-top: 45px;
+  font-size: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  color: var(--main-bg-color);
+  border: none;
+}
+p {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+}
