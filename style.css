@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(var(--main-bg-color),var(--gradient-two));
+  background: linear-gradient(var(--main-bg-color), var(--gradient-two));
   height: 100%;
   background-attachment: fixed;
 }
@@ -70,6 +70,13 @@ h3 {
   color: var(--main-bg-color);
   border: none;
 }
+#color-hex {
+  cursor: pointer;
+}
+#generate:hover {
+  font-weight: bold;
+  text-shadow: 3px 3px 3px var(--gradient-two);
+}
 #save {
   margin-top: 45px;
   font-size: 40px;
@@ -79,6 +86,10 @@ h3 {
   outline: none;
   color: var(--main-bg-color);
   border: none;
+}
+#save:hover {
+  font-weight: bold;
+  text-shadow: 3px 3px 3px var(--gradient-two);
 }
 p {
   font-size: 30px;
@@ -92,14 +103,33 @@ p {
   height: 60px;
   width: 60px;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.saved-color:hover {
+  height: 80px;
+  width: 80px;
 }
 #saved {
   display: flex;
   align-self: center;
   transform: translateY(31vh);
-  width:48vw;
-  margin-left: 25vw; 
+  width: 48vw;
+  margin-left: 25vw;
   flex-direction: row;
   gap: 25px;
   padding: 0 25px;
+}
+.deleted {
+  transform: rotate(20deg) translateY(80px);
+  opacity: 0;
+}
+#made-by {
+  right: 0;
+}
+#hazem {
+  background: wheat;
+  color: var(--gradient-two );
+  font-weight: bold;
+  padding: 0px 10px;
+  border-radius: 6px;
 }
